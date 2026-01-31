@@ -20,8 +20,8 @@ class Config:
     # Exchange Settings (oanda for forex, binance for crypto)
     EXCHANGE = os.getenv('EXCHANGE', 'oanda')
     
-    # Trading Symbols to Monitor
-    SYMBOLS = os.getenv('SYMBOLS', 'XAU/USD').split(',')
+    # Trading Symbols to Monitor (GOLD forex pairs)
+    SYMBOLS = os.getenv('SYMBOLS', 'XAU/USD,XAU/EUR').split(',')
     
     # Timeframes to Monitor (in minutes)
     TIMEFRAMES = os.getenv('TIMEFRAMES', '15m,1h,4h').split(',')

@@ -1,0 +1,28 @@
+2026-01-31 10:47:23,109 - data_fetcher - INFO - Connected to binance exchange
+2026-01-31 10:47:23,330 - __main__ - INFO - Reversal Bot initialized successfully
+2026-01-31 10:47:23,330 - __main__ - INFO - Starting Reversal Bot...
+2026-01-31 10:47:23,330 - __main__ - INFO - Testing Telegram connection...
+2026-01-31 10:47:24,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/botyour_bot_token_here/sendMessage "HTTP/1.1 404 Not Found"
+2026-01-31 10:47:24,150 - telegram_notifier - ERROR - Failed to send test message: Not Found
+2026-01-31 10:47:24,150 - __main__ - ERROR - ✗ Telegram connection failed
+2026-01-31 10:47:24,150 - __main__ - ERROR - Failed to connect to Telegram. Exiting...
+2026-01-31 10:52:27,806 - data_fetcher - INFO - Connected to binance exchange
+2026-01-31 10:52:27,915 - __main__ - INFO - Reversal Bot initialized successfully
+2026-01-31 10:52:27,915 - __main__ - INFO - Starting Reversal Bot...
+2026-01-31 10:52:27,915 - __main__ - INFO - Testing Telegram connection...
+2026-01-31 10:52:29,542 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8588145881:AAHbAY4127oWTTgtdpQyexeVvp9N0obbxWA/sendMessage "HTTP/1.1 200 OK"
+2026-01-31 10:52:29,545 - telegram_notifier - INFO - Test message sent successfully
+2026-01-31 10:52:29,545 - __main__ - INFO - ✓ Telegram connection successful
+2026-01-31 10:52:29,545 - __main__ - INFO - 
+============================================================
+2026-01-31 10:52:29,545 - __main__ - INFO - Scan #1 - 2026-01-31 10:52:29
+2026-01-31 10:52:29,545 - __main__ - INFO - ============================================================
+2026-01-31 10:52:29,545 - __main__ - INFO - Starting market scan...
+2026-01-31 10:52:31,768 - data_fetcher - ERROR - Network error fetching BTC/USDT: binance GET https://api.binance.com/api/v3/exchangeInfo
+2026-01-31 10:52:31,768 - __main__ - WARNING - Invalid data for BTC/USDT 15m
+2026-01-31 10:52:32,015 - data_fetcher - ERROR - Network error fetching BTC/USDT: binance GET https://api.binance.com/api/v3/exchangeInfo
+2026-01-31 10:52:32,015 - __main__ - WARNING - Invalid data for BTC/USDT 1h
+2026-01-31 10:52:34,120 - data_fetcher - ERROR - Network error fetching BTC/USDT: binance GET https://api.binance.com/api/v3/exchangeInfo
+2026-01-31 10:52:34,120 - __main__ - WARNING - Invalid data for BTC/USDT 4h
+2026-01-31 10:52:34,121 - __main__ - INFO - Market scan completed
+2026-01-31 10:52:34,121 - __main__ - INFO - Waiting 60 seconds until next scan...
