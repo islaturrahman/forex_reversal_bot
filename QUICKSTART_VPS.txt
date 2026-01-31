@@ -1,0 +1,70 @@
+╔══════════════════════════════════════════════════════════════╗
+║           GOLD REVERSAL BOT - QUICK START VPS               ║
+╚══════════════════════════════════════════════════════════════╝
+
+📋 LANGKAH CEPAT DEPLOY KE VPS:
+
+1️⃣  LOGIN KE VPS
+   ssh root@your_vps_ip
+
+2️⃣  CLONE REPOSITORY
+   git clone https://github.com/islaturrahman/forex_reversal_bot.git
+   cd forex_reversal_bot
+
+3️⃣  JALANKAN SCRIPT DEPLOYMENT
+   chmod +x deploy_vps.sh
+   ./deploy_vps.sh
+
+4️⃣  EDIT KONFIGURASI
+   nano .env
+   
+   Isi:
+   TELEGRAM_BOT_TOKEN=8588145881:AAHbAY4127oWTTgtdpQyexeVvp9N0obbxWA
+   TELEGRAM_CHAT_ID=8354852198
+   
+   Simpan: Ctrl+O, Enter, Ctrl+X
+
+5️⃣  TEST BOT
+   source venv/bin/activate
+   python demo_gold.py
+
+6️⃣  JALANKAN BOT 24/7 (RECOMMENDED: Screen)
+   screen -S goldbot
+   source venv/bin/activate
+   python main.py
+   
+   Detach: Ctrl+A lalu D
+   Attach kembali: screen -r goldbot
+
+═══════════════════════════════════════════════════════════════
+
+📱 MONITORING:
+
+• Lihat log:
+  tail -f reversal_bot.log
+
+• Cek bot jalan:
+  ps aux | grep main.py
+
+• Lihat screen sessions:
+  screen -ls
+
+═══════════════════════════════════════════════════════════════
+
+🔧 TROUBLESHOOTING:
+
+• Bot crash? Restart:
+  screen -r goldbot
+  Ctrl+C
+  python main.py
+
+• Update bot:
+  git pull origin master
+  pip install -r requirements.txt --upgrade
+
+═══════════════════════════════════════════════════════════════
+
+📚 PANDUAN LENGKAP:
+   Lihat file: VPS_GUIDE.md
+
+🎉 SELAMAT! Bot siap berjalan 24/7 di VPS!
